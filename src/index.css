@@ -1,0 +1,116 @@
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
+
+.ProductGrid {
+  display: grid;
+  /* grid-template-columns: repeat(2, 1fr); For 2x2 grid */
+  grid-template-columns: repeat(3, 1fr); /* For 3x3 grid */
+  gap: 5px;
+  justify-items: center;
+  width: 900px;
+  margin: 0 auto;
+  border: 2px solid #ccc; /* Add a slim border */
+  padding: 10px; 
+}
+
+.SectionContent {
+  width: 98%;
+  padding: 16px;
+  justify-items: center;
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+  border: 1px solid #eee;
+  box-shadow: 0 2px 3px #ccc;
+  margin: 10px;
+  box-sizing: border-box;
+  cursor: pointer;
+}
+
+.Content {
+  width: 250px;
+  padding: 16px;
+  text-align: center;
+  border: 1px solid #eee;
+  box-shadow: 0 2px 3px #ccc;
+  margin: 10px;
+  box-sizing: border-box;
+  cursor: pointer;
+}
+
+.Product {
+  display: flex;
+  flex-flow: flex;
+  justify-content: center;
+  width: 100px;
+  margin: auto;
+}
+
+.SectionContent:hover,
+.SectionContent:active {
+  background-color: #C0DDF5;
+}
+
+.Content:hover,
+.Content:active {
+  background-color: #C0DDF5;
+}
+
+.Field{
+  margin: 16px 0;
+  color: rgb(10, 7, 206);
+}
+
+.NewProduct {
+  width: 80%;
+  margin: 20px auto;
+  border: 1px solid #eee;
+  box-shadow: 0 2px 3px #ccc;
+  text-align: center;
+}
+
+.NewProduct label {
+  display: block;
+  margin: 10px auto;
+  text-align: center;
+  font-weight: bold;
+}
+
+.NewProduct input,
+.NewProduct textarea,
+.NewProduct select {
+  display: block;
+  width: 80%;
+  box-sizing: border-box;
+  border: 1px solid black;
+  outline: none;
+  font: inherit;
+  margin: auto;
+}
+
+.NewProduct button {
+  margin: 5px 0;
+  padding: 10px;
+  font: inherit;
+  border: 1px solid #fa923f;
+  background-color: transparent;
+  color: #fa923f;
+  cursor: pointer;
+}
+
+.NewProduct button:hover,
+.NewProduct button:active {
+  color: white;
+  background-color: #fa923f;
+}
